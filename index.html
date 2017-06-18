@@ -52,10 +52,17 @@
 				<div class="col-md-offset-3 col-md-6">
 					<form Name="formulario">
 						<h3>Nombre</h3>
-						<input type="text" id="clave">
+						<input type="text" id="key">
 						<h3>Comentario</h3>
-						<textarea id="valor"></textarea>
+						<textarea id="value"></textarea>
 					</form>
+
+					<div class="botones">
+						<button type="button" id="boton">Postear</button>
+						<input type="button" class="btn" onclick="borrar()" name="borrar" id="borrar" value="Borrar todo">
+					</div>
+
+					<div id="contenedor"></div>
 				</div>
 			</div>
 		</div>

@@ -61,3 +61,23 @@ footer{
 
 /* Estilos comentarios */
 
+.botones{
+  display: inline-block;
+}
+
+.botones input{
+  background-color: transparent;
+  width: 100px;
+  border: 1px solid DeepPink;
+  display: inline-block;
+}
+
+button{
+  background-color: transparent;
+  width: 100px;
+  height: 34px;
+  border-radius: 4px;
+  border: 1px solid DeepPink;
+  display: inline-block;
+}
+
