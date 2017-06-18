@@ -18,15 +18,20 @@ function guardar(){
 	for(var i = 0; i < localStorage.length; i++){
 		var kei = localStorage.key(i);
 		var valuee = localStorage.getItem(kei);
+		var post = "<h4>" + "<strong>" + kei + "</strong>" + "</h4>" + "<p>" + valuee + "</p>";
 
-		contenedor.innerHTML += "<p>" + kei + "<br>" + valuee + "</p>";/*se usa += para agregar, si se usa == se sobreescribe el valor*/
+		var posteo = document.createElement(post);
+		contenedor.appendChild(posteo);
+
+		/*contenedor.innerHTML += "<h4>" + "<strong>" + kei + "</strong>" + "</h4>" + "<p>" + valuee + "</p>";/*se usa += para agregar, si se usa == se sobreescribe el valor*/
+		contenedor.style.backgroundColor = '#DF33B2'; 
 	}
+
 }
 
 function borrar(){
 	localStorage.clear();
 	guardar(); 
 }
-
 
 init();
