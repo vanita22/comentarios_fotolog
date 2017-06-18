@@ -18,13 +18,20 @@ function guardar(){
 	for(var i = 0; i < localStorage.length; i++){
 		var kei = localStorage.key(i);
 		var valuee = localStorage.getItem(kei);
-		var post = "<h4>" + "<strong>" + kei + "</strong>" + "</h4>" + "<p>" + valuee + "</p>";
+		
 
-		var posteo = document.createElement(post);
-		contenedor.appendChild(posteo);
+		var post = document.createElement("h4");
+		var posteo = document.createTextNode(kei);
+		post.appendChild(posteo);
+		contenedor.appendChild(post);	
+
+		var post2 = document.createElement("p");
+		var posteo2 = document.createTextNode(valuee);
+		post2.appendChild(posteo2);
+		contenedor.appendChild(post2);	
 
 		/*contenedor.innerHTML += "<h4>" + "<strong>" + kei + "</strong>" + "</h4>" + "<p>" + valuee + "</p>";/*se usa += para agregar, si se usa == se sobreescribe el valor*/
-		contenedor.style.backgroundColor = '#DF33B2'; 
+		/*contenedor.style.backgroundColor = '#DF33B2'; */
 	}
 
 }

@@ -81,13 +81,27 @@ button{
   display: inline-block;
 }
 
+ #contenedor h4{
+  color: black;
+  font-weight: bold;
+ }
+
  #contenedor p{
   color: white;
  }
 
  #contenedor{
+  background-color: purple;
   border-radius: 5px;
   padding: 10px;
   margin-top: 10px;
  }
+
+ .linea{
+  border: 3px solid black;
+  width: 50%;
+ }
+
+
+
 
